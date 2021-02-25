@@ -1,0 +1,231 @@
+body {
+    background-image: url(images/bg/bg3.jpg);
+    background-size: cover;
+    margin: 0;
+    background-attachment: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#header{
+    height: 165px;
+    background-image: url(images/jpg/header.jpg);
+
+}
+#main_header {
+height: 150px;
+width: 1000px;
+margin: auto;
+}
+main-header img{
+    width: 100%;
+
+}
+#navigation{
+    height: 35px;
+    background-image: url(images/png/nav.png);
+}
+#main_navigation{
+    width: 1000px;
+    height: 35px;
+    margin: auto;
+}
+#main_navigation a {
+    text-decoration: none;
+    color: darkgreen;
+    line-height: 35px;
+    padding: 0 56px;
+    border-left: 1px inset #aaa;
+    border-right: 1px inset #aaa;
+    float: left;
+}
+#main_navigation a:hover{
+    background-image: url(images/jpg/hover.jpg);
+    color: #fff;
+}
+#headline{
+    height: 25px;
+    background-color: #aaa;
+}
+#main_headline{
+    width: 1000px;
+    height: 25px;
+    margin: auto;
+}
+#main_headline marquee{
+    color: black;
+    font-weight: bold;
+}
+#footer{
+    height: 350px;
+background-image: url(images/jpg/footer.jpg);
+}
+#footer_top{
+    height: 300px;
+    width: 1000px;
+    margin: auto;
+}
+.footer_info{
+    width: 220px;
+    height: 300px;
+    float: left;
+    margin: 0 15px;
+}
+.footer_info h2{
+    margin: 0;
+    color: #ffdf00;
+    font-size: 20px;
+    border-bottom:2px solid;
+}
+.footer_info p{
+    color: #ffffff;
+    text-align: justify;
+}
+.footer_info a{
+    text-decoration: none;
+    color: yellow;
+}
+#footer_bottom{
+    height: 50px;
+    width: 1000px;
+    margin: auto;
+    background-image: url(images/jpg/footer_bottom.jpg);
+}
+#footer_bottom p{
+    margin: 0;
+    color: #ffffff;
+    text-align: center;
+    line-height: 50px;
+}
+#footer_bottom a{
+    text-decoration: none;
+    color: #fefafe;
+}
+#footer_bottom a :hover{
+color: beige;
+}
+.footer_info li{
+    color: #ffffff;
+    line-height: 25px;
+    list-style-image: url(images/png/clock.png);
+}
+.social{
+    height: 56px;
+    margin-top: 15px;
+}
+.social_icon{
+    width: 56px;
+    height: 56px;
+    float: left;
+    margin-right: 10px;
+}
+#content{
+    width: 940px;
+    margin: auto;
+    padding: 30px;
+    background-color: #ffffff;
+}
+
+#slide{
+    height: 180px;
+    background-color: #f0f0f0;
+}
+#article1{
+    height: 150px;
+    margin: 15px  0;
+}
+#article2{
+    height: 250px;
+    margin: 15px 0;
+}
+#content1{
+    height: 200px;
+}
+.content1_info{
+    width: 283px;
+    height: 200px;
+    margin: 0 15px;
+    float: left;
+    background-color: #4f4f4f;
+    border-radius: 25px;
+}
+.content1_info img{
+    border-radius: 25px;
+}
+#content2{
+    height: 220px;
+    
+}
+.content2_info{
+    width: 440px;
+    height: 220px;
+    margin: 0 15px;
+    float: left;
+    background-color: #4f4f4f;
+    border-radius: 25px;
+}
+.content2_info img{
+    border-radius: 25px;
+}
+.about {
+    height: 200px;
+    padding: 15px;
+    border-radius: 15px;
+    border: 1px #ccc solid;
+    margin: 15px 0;
+}
+.about_pix {
+    width: 200px;
+    height: 200px;
+    float: left;
+    border-radius: 50%;
+    background-color: #ccc;
+    margin-right: 15px;
+}
+.about_pix img{
+    border-radius: 50%;
+}
+.gallery img{
+    width: 200px;
+    height: 200px;
+    border-radius: 25px;
+    margin: 15px;
+    transition: 0.5s;
+}
+.gallery img:hover{
+    transform: scale(1.1);
+    filter: grayscale(100%);
+
+}
+#reg fieldset{
+    border: 1px solid #126b2f;
+    border-radius:15px;
+    margin: 30px 0;
+}
+#reg legend{
+    font-size: 22px;
+    color: #126b2f;
+}
+#reg td{
+    line-height: 30px;
+    color: #126b2f;
+}
+#reg input[type=text], input[type=password]{
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.article_readmore a{
+        text-decoration: none;
+        color: darkgreen;
+        line-height: 35px;
+        padding: 0 30px;
+        font-weight: bold;
+        
+    
+}
+.article_readmore a:hover{
+    background-image: url(images/jpg/hover.jpg);
+    color: white;
+}

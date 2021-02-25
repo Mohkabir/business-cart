@@ -1,0 +1,120 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+html {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+}
+
+body #header {
+  width: 100%;
+  background-color: #22481f;
+  padding: 2em;
+}
+
+body #content1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body #content2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body #content .about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body #content .about .about_pix {
+  width: 80%;
+  margin: 0 auto;
+}
+
+body #footer {
+  background-color: #22481f;
+}
+
+body #footer #footer_top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 90%;
+  margin: 0 auto;
+  color: #fff;
+  font-weight: bolder;
+}
+
+body #footer #footer_top .footer_info h2 {
+  color: #d5c566;
+  border-bottom: 2px solid #d5c566;
+  padding-bottom: 0.3em;
+}
+
+body #footer #footer_top .footer_info a {
+  color: #d5c566;
+}
+
+body #footer #footer_top .footer_info .social {
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: left;
+}
+
+body #footer #footer_top .footer_info .social i {
+  width: 40px;
+  padding: 10px;
+  text-align: center;
+  background-color: #000;
+  border-radius: 50px;
+}
+
+body #footer #footer_bottom {
+  color: #fff;
+  border-top: 2px solid #fff;
+  text-align: center;
+  padding: 1em;
+}
+
+body #footer #footer_bottom a {
+  color: #fff;
+}
+/*# sourceMappingURL=style.css.map */
