@@ -10,30 +10,82 @@ html {
   margin: 0;
 }
 
+img {
+  width: 100%;
+}
+
 body {
   padding: 0;
   margin: 0;
   font-size: 14px;
+  background-color: #dddad1;
 }
 
 body #header {
   width: 100%;
   background-color: #22481f;
-  padding: 2em;
+  padding: 0em;
 }
 
-body .fa-bars {
-  width: 30px;
-  font-size: 30px;
+body #header #main_header {
+  text-align: center;
+}
+
+body #header #main_header img {
+  width: 40%;
+  border-radius: 50px;
+}
+
+@-webkit-keyframes marquee {
+  from {
+    -webkit-transform: translateX(500px);
+            transform: translateX(500px);
+  }
+  to {
+    -webkit-transform: translateX(-500px);
+            transform: translateX(-500px);
+  }
+}
+
+@keyframes marquee {
+  from {
+    -webkit-transform: translateX(500px);
+            transform: translateX(500px);
+  }
+  to {
+    -webkit-transform: translateX(-500px);
+            transform: translateX(-500px);
+  }
+}
+
+body #main_headline {
+  overflow-x: hidden;
+}
+
+body #main_headline .marquee {
+  width: 500px;
+  -webkit-animation: marquee 15s infinite;
+          animation: marquee 15s infinite;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+}
+
+body .nav-icon .fa-bars {
+  width: 50px;
+  font-size: 25px;
   position: fixed;
   top: 10px;
   right: 5px;
+  color: #fff;
+  text-align: center;
+  padding: 4px 8px;
+  background-color: #000;
 }
 
 body #main_navigation {
   display: none;
   position: fixed;
-  top: 40px;
+  top: 48px;
   width: 100%;
   text-align: center;
   background-color: #fff;
@@ -50,6 +102,10 @@ body #main_navigation a {
 body #main_navigation a:hover {
   background-color: #000;
   color: #fff;
+}
+
+body #article1 {
+  padding: 1em;
 }
 
 body #content1 {
@@ -98,11 +154,47 @@ body #content .about {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  padding: 1em;
 }
 
 body #content .about .about_pix {
+  width: 100%;
+  text-align: center;
+}
+
+body #content .about .about_pix img {
   width: 80%;
-  margin: 0 auto;
+  border-radius: 50px;
+}
+
+body #content .gallery {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[12];
+      grid-template-columns: repeat(12, 1fr);
+  padding: 1em;
+  gap: 25px;
+}
+
+body #content .gallery a {
+  grid-column: span 12;
+}
+
+body #content .gallery a img {
+  border-radius: 100px;
+}
+
+body #content #register {
+  width: 100%;
+}
+
+body #content #register fieldset {
+  width: 90%;
+  margin: 1em auto;
+}
+
+body #content #register fieldset div {
+  margin: 0.5em;
 }
 
 body #footer {
