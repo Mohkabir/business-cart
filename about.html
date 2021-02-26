@@ -6,33 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <div id="header">
-        <div id="main_header"></div>
-    </div>
-    <div id="navigation">
-        <div id="main_navigation">
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="gallery.html">Gallery</a>
-            <a href="services.html">Services</a>
-            <a href="register.html">REgister</a>
-            <a href="contact.html">Contact</a>
-
+        <div id="main_header">
+            <img src="./images/Header-image.jpg" alt="Header-image">
         </div>
     </div>
-    <div id="headline">
-        <div id="main_headline">
-            <marquee>We provide different payment services to you. you can contact us through our mail.
-            </marquee>
-        </div>
+    <div class="nav-icon">
+        <i class="fa fa-bars"></i>
+    </div>
+    <div id="main_navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="services.html">Services</a>
+        <a href="register.html">REgister</a>
+        <a href="contact.html">Contact</a>
+    </div>
+    <div id="main_headline">
+        <p class="marquee">We provide different payment services to you. you can contact us through our mail.
+        </p>
     </div>
     <div id="content">
         <div class="about">
             <div class="about_pix">
-                <img src="images/jpg/vision.jpg" />
+                <img src="./images/lion.jpg" />
             </div>
             <h2>Vision</h2>
             <p>ahjdie aadodje aie amkjodneji asnhfdeekeol masjsjddekjke mjekekej ksfjdie jkede ddjkje jekeklek dmdnejk
@@ -42,7 +46,7 @@
         </div>
         <div class="about">
             <div class="about_pix">
-                <img src="images/jpg/mision.jpg" />
+                <img src="./images/lion.jpg" />
             </div>
             <h2>Mision</h2>
             <p>hehie ejeiow wjwie wjwj wjwkeion jweewj ejweo ewjrrkw ewjewrkw wowwpw wjhrjrwo wjwjowwwh hr tuieo jt
@@ -51,7 +55,7 @@
         </div>
         <div class="about">
             <div class="about_pix">
-                <img src="images/jpg/goal.jpg" />
+                <img src="./images/lion.jpg" />
             </div>
             <h2>Goal</h2>
             <p>elkrekror rjrwkkw wrkwrkwowr wkrwklwrw wmjwkwrl wwrwow wkrwkrlww wrkwkw hrrkkr wwpn nvj kwkew jewrkwl
@@ -60,7 +64,7 @@
         </div>
         <div class="about">
             <div class="about_pix">
-                <img src="images/jpg/history.jpg" />
+                <img src="./images/lion.jpg" />
             </div>
             <h2>History</h2>
             <p>ddjkoe ekedkwwk wekewwk ewewkew ekewkwe wemweklkwe wekwewk wemwewek wewekwe ewmemwkw mewmwkwk ewmwmeew
@@ -73,20 +77,25 @@
     <div id="footer">
         <div id="footer_top">
             <div class="footer_info">
-                <h2>Current promo</h2>
+                <h2>current promo</h2>
                 <p><a href="#">Click here for Mini Offer</a><br>Buy two of our product and get one free</p>
-                <p><a href="#">Click here for Maxi Offer</a><br>Buy our jumbo pack and get 30% discount</p>
+                <p><a href="#">Click Here for Maxi Offer</a><br>Buy our jumbo pack and get 30% discount</p>
             </div>
             <div class="footer_info">
                 <h2>Connect With us</h2>
                 <div class="social">
-                    <div class="social_icon"><img src="images/logo/social_icons.png" /></div>
-                    <p>Facebook<br><a href="#" .>+55,555,555</a></p>
+                    <div class="social_icon"><i class="fab fa-facebook-f"></i></div>
+                    <p>Facebook<br><a href="#">+55,555,555</a></p>
                 </div>
-                <div class="social_icon"><img src="images/logo/social_icons2.png" /></div>
-                <p>Twitter<br><a href="#" .>@zombie1</a></p>
-                <div class="social_icon"><img src="images/logo/social_icons3.png" /></div>
-                <p>Rss<br><a href="#" .>Smile</a></p>
+                <div class="social">
+                    <div class="social_icon"><i class="fab fa-twitter"></i></div>
+                    <p>Twitter<br><a href="#">@zombie1</a></p>                    
+                </div>
+                <div class="social">
+                    <div class="social_icon"><i class="fa fa-wifi"></i></div>
+                    <p class="Rss">Rss <br><a href="#">Smile</a></p>
+                </div>
+                
             </div>
 
             <div class="footer_info">
@@ -114,7 +123,7 @@
         </div>
     </div>
 
-
+    <script src="script.js"></script>
 </body>
 
 </html>
