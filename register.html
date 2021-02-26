@@ -1,144 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="style.css" rel="stylesheet" type="text/css"/>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+        integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+        crossorigin="anonymous"></script>
 </head>
+
 <body>
     <div id="header">
-        <div id="main_header"></div> 
-    </div>
-    <div id="navigation">
-        <div id="main_navigation">
-<a href="index.html">Home</a>
-<a href="about.html">About</a>
-<a href="gallery.html">Gallery</a>
-<a href="services.html">Services</a>
-<a href="register.html">REgister</a>
-<a href="contact.html">Contact</a>
-
-
-
+        <div id="main_header">
+            <img src="./images/Header-image.jpg" alt="Header-image">
         </div>
     </div>
-    <div id="headline">
+    <div class="nav-icon">
+        <i class="fa fa-bars"></i>
+    </div>
+    <div id="main_navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="services.html">Services</a>
+        <a href="register.html">REgister</a>
+        <a href="contact.html">Contact</a>
+    </div>
     <div id="main_headline">
-        <marquee>We provide different payment services to you. you can contact us through our mail.
- </marquee>
-    </div>    
+        <p class="marquee">We provide different payment services to you. you can contact us through our mail.
+        </p>
     </div>
     <div id="content">
         <div id="register">
             <form id="reg">
                 <fieldset>
                     <legend>Account Information</legend>
-                
-                    <table>
-                        <tr>
-                            <td width="220" align="right">username</td>
-                            <td><input type="text" size="30" placeholder="enter valid e-mail"/></td>
-                        </tr>
-                        <tr>
-                            <td align="right">Password</td>
-                            <td><input type="password" maxlength="1o" placeholder="enter password"/></td>
-                        </tr>
-                        <tr>
-                            <td align="right">Confirm Password </td>
-                            <td><input type="password" maxlength="10" placeholder="enter password"/></td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td><input type="submit"/></td>
-                        </tr>
-                    </table>
+                    <form action="">
+                        <div>
+                            <label for="username">username</label>
+                            <input1 type="text" placeholder="enter valid e-mail" />
+                        </div>
+                        <div>
+                            <label for="password">password</label>
+                            <input1 type="password" maxlength="1o" placeholder="enter password" />
+                        </div>
+                        <div>
+                            <label for="ConfirmPassword">Confirm Password</label>
+                            <input type="password" maxlength="10" placeholder="enter password" />
+                        </div>
+                        <input type="submit" />
+                    </form>
                 </fieldset>
                 <fieldset>
                     <legend>personal Information</legend>
+                    <form action="">
+                        <div>
+                            <label for="Firstname">First name</label>
+                            <input type="text" />
+                        </div>
+                        <div>
+                            <label for="Gender">Gender:</label>
+                            <input type="text" />
+                        </div>
+                        <div>
+                            <label for="Firstname">First name</label>
+                            <input type="text" />
+                        </div>
+
+                        <div>
+                            <span>Gender:</span>
+                            <input type="radio" value="gender" name="gender" /> <span>Male</span>
+                            <input type="radio" value="gender" name="gender" /> <span>Female</span>
+                        </div>
+                        <div>
+                            <span>Marital status:</span>
+                            <input type="radio" value="marital" name="marital" /> <span>single</span>
+                            <input type="radio" value="marital" name="marital" /> <span>Married</span>
+                            <input type="radio" value="marital" name="marital" /> <span>Divorced</span>
+                            <input type="radio" value="marital" name="marital" />
+                            <span>seperated</span>
+                        </div>
+                        <div>
+                            <span>Employment Status:</span>
+                            <input type="radio" value="employment" name="employment" /> <span>Employed</span>
+                            <input type="radio" value="employment" name="employment" />
+                            <span>Unemployed</span>
+                            <input type="radio" value="employment" name="employment" /> <span>Self-employed</span>
+                        </div>
+                        <div>
+                            <span>Social Media:</span>
+                            <input type="checkbox" /> <span>Facebook</span>
+                            <input type="checkbox" /> <span>Twitter</span>
+                            <input type="checkbox" />
+                            <span>Instagram</span>
+                            <input type="checkbox" /> <span>Skype</span>
+                            <input type="checkbox" />
+                            <span>Linkedin</span>
+                        </div>
+                        <div>
+                            <span>State or origin:</span>
+
+                            <select>
+                                <option>Abia</option>
+                                <option>Adamwa</option>
+                                <option>Akwa-ibom</option>
+                                <option>Anambra</option>
+                                <option>bauchi</option>
+                                <option>benue</option>
+                                <option>Borno</option>
+                                <option>Cross-river</option>
+                                <option>Delta</option>
+                                <option>Edo</option>
+                                <option>Ekiti</option>
+                                <option>Kaduna</option>
+                                <option>Kogi/option>
+                                <option>Lagos</option>
+                                <option>Osun</option>
+                                <option>Oyo</option>
+                            </select>
+
+                        </div>
+                        <div>
+                            <span>Upload picture:</span>
+                            <input type="file" />
+                        </div>
+                        <div>
+                            <span>Comments:</span>
+                            <textarea></textarea>
+
+                        </div>
+                    </form>
+
                     <table>
+
                         <tr>
-                            <td width="220" align="right">First name</td>
-                            <td><input type="text" size="30/>"</td>
-                        </tr>
-                        <tr>
-                            <td width="220" align="right">Middle name</td>
-                            <td><input type="text" size="30/>"</td>
-                        </tr>
-                        <tr>
-                            <td width="220" align="right">First name</td>
-                            <td><input type="text" size="30/>"</td>
-                        </tr>
-                        <tr>
-                            <td>Gender:</td>
-                            <td>
-                            <input type="radio" value="gender" name="gender"/> Male
-                            <input type="radio" value="gender" name="gender"/> Female
-                            </td>
-                        </tr>
-                        <tr>
-                            <td align="right">Marital status</td>
-                            <td>
-                                <input type="radio" value="marital" name="marital"/> single
-                                <input type="radio" value="marital" name="marital"/> Married
-                                <input type="radio" value="marital" name="marital"/> Divorced
-                                <input type="radio" value="marital" name="marital"/> seperated
-                            </td>
-                        </tr>
-                        <tr>
-                            <td align="right">Employment Status</td>
-                            <td>
-                                <input type="radio" value="employment" name="employment"/> Employed
-                                <input type="radio" value="employment" name="employment"/> Unemployed
-                                <input type="radio" value="employment" name="employment"/> Self-employed
-                            </td>
-                        </tr>
-                        <tr>
-                            <td align="right">Social Media</td>
-                            <td>
-                            <input type="checkbox"/> Facebook
-                            <input type="checkbox"/> Twitter
-                            <input type="checkbox"/> Instagram
-                            <input type="checkbox"/> Skype
-                            <input type="checkbox"/> Linkedin
-                            </td>
-                        </tr>
-                        <tr>
-                            <td align="right">State or origin</td>
-                            <td>
-                                <select>
-                                    <option>Abia</option>
-                                    <option>Adamwa</option>
-                                    <option>Akwa-ibom</option>
-                                    <option>Anambra</option>
-                                    <option>bauchi</option>
-                                    <option>benue</option>
-                                    <option>Borno</option>
-                                    <option>Cross-river</option>
-                                    <option>Delta</option>
-                                    <option>Edo</option>
-                                    <option>Ekiti</option>
-                                    <option>Kaduna</option>
-                                    <option>Kogi/option>
-                                    <option>Lagos</option>
-                                    <option>Osun</option>
-                                    <option>Oyo</option>
-                                </select>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td align="right">Upload picture</td>
-                            <td><input type="file"/></td>
-                        </tr>
-                        <tr>
-                            <td align="right" valign="top">Comments:</td>
-                            <td>
-                                <textarea rows="5" cols="30"></textarea>
-                            </td>
+
                         </tr>
                         <tr>
                             <td></td>
-                            <td><input type="submit" value="register"/></td>
+                            <td><input type="submit" value="register" /></td>
                         </tr>
                     </table>
                 </fieldset>
@@ -146,50 +150,60 @@
             </form>
 
         </div>
-      
-        
-       </div>
+
+
     </div>
-    <div id="footer"> 
+    </div>
+    <div id="footer">
         <div id="footer_top">
             <div class="footer_info">
-                <h2>Current Promo</h2>
-                <p><a href="#">Click here for mini promo</a><br>Buy two of our product and get one free</p>
-                <p><a href="#">Click here for Maxi promo</a><br>Buy our jumbo pack and get 30% discount</p>
+                <h2>current promo</h2>
+                <p><a href="#">Click here for Mini Offer</a><br>Buy two of our product and get one free</p>
+                <p><a href="#">Click Here for Maxi Offer</a><br>Buy our jumbo pack and get 30% discount</p>
             </div>
-            <div class="footer_info"><h2>Connect With us</h2>
-            <div class="social">
-                <div class="social_icon"><img src="images/logo/social_icons.png"/></div>
-                <p>Facebook<br><a href="#".>+55,555,555</a></p>
+            <div class="footer_info">
+                <h2>Connect With us</h2>
+                <div class="social">
+                    <div class="social_icon"><i class="fab fa-facebook-f"></i></div>
+                    <p>Facebook<br><a href="#">+55,555,555</a></p>
+                </div>
+                <div class="social">
+                    <div class="social_icon"><i class="fab fa-twitter"></i></div>
+                    <p>Twitter<br><a href="#">@zombie1</a></p>
+                </div>
+                <div class="social">
+                    <div class="social_icon"><i class="fa fa-wifi"></i></div>
+                    <p class="Rss">Rss <br><a href="#">Smile</a></p>
+                </div>
+
             </div>
-                <div class="social_icon"><img src="images/logo/social_icons2.png"/></div>
-                <p>Twitter<br><a href="#".>@zombie1</a></p>
-                <div class="social_icon"><img src="images/logo/social_icons3.png"/></div>
-                <p>Rss<br><a href="#".>Smile</a></p>
+
+            <div class="footer_info">
+                <h2>Buisness Timings</h2>
+                <ul>
+                    <li>Monday: <a href="#">9am-4pm</a></li>
+                    <li>Tueday: <a href="#">9am-4pm</a></li>
+                    <li>Wednesday: <a href="#">9am-4pm</a></li>
+                    <li>Thursday: <a href="#">9am-4pm</a></li>
+                    <li>Friday: <a href="#">9am-4pm</a></li>
+                    <li>Saturday: <a href="#">9am-4pm</a></li>
+                    <li>Sunday: <a href="#">9am-4pm</a></li>
+
+                </ul>
             </div>
-            
-            <div class="footer_info"><h2>Buisness Timings</h2>
-            <ul>
-                <li>Monday: <a href="#">9am-4pm</a></li>
-                <li>Tueday: <a href="#">9am-4pm</a></li>
-                <li>Wednesday: <a href="#">9am-4pm</a></li>
-                <li>Thursday: <a href="#">9am-4pm</a></li>
-                <li>Friday: <a href="#">9am-4pm</a></li>
-                <li>Saturday: <a href="#">9am-4pm</a></li>
-                <li>Sunday: <a href="#">9am-4pm</a></li>
-                
-            </ul>
-            </div>
-            <div class="footer_info"><h2>Location</h2>
-            <p>No 64 Agboola Ajumobi off Kayode Taiwo, magodo Phase 2, Lagos, Nigeria</p>
-            <a href=">hameed.korede.hk@gmail.com">hameed.korede.hk@gmail.com</a>
-            <p>09058673973, 07017800907</p>
+            <div class="footer_info">
+                <h2>Location</h2>
+                <p>No 64 Agboola Ajumobi off Kayode Taiwo, magodo Phase 2, Lagos, Nigeria</p>
+                <a href="hameed.korede.hk@gmail.com">hameed.korede.hk@gmail.com</a>
+                <p>09058673973, 07017800907</p>
             </div>
         </div>
-        <div id="footer_bottom"> <p>&COPY;Korede 2020 | All Rights designed by <a href="#">Korede</a></p>
+        <div id="footer_bottom">
+            <p>&COPY;Korede 2020 | All Rights designed by <a href="#">Korede</a></p>
         </div>
     </div>
-    
-    
+
+    <script src="script.js"></script>
 </body>
+
 </html>
